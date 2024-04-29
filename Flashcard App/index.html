@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="style.css">
+   <title>Flashcard App</title>
+</head>
+<body>
+
+   <div class="container">
+      <div class="add-card-con">
+         <button id="add-card"> Add New Card</button>
+      </div>
+
+      <div class="card-list">
+         <div class="card">
+            <p class="que-div">Question</p>
+            <p class="ans-div">Answer</p>
+            <button class="show-hide-btn">Show/Hide</button>
+            <div class="btns-conts">
+               <button class="edit"><i class="fa fa-pencil-square"></i></button> <!-- Corrected class name for pen icon -->
+               <button class="delete"> <i class="fa fa-trash"></i></button>
+            </div>
+         </div>
+      </div>
+
+      <div class="modal" id="add-card-modal"> 
+         <h2>Add New Card</h2>
+         <div class="warpper">
+            <div class="error-con">
+               <span class="hide" id="error">
+                  Input field cannot be empty!
+               </span>
+            </div>
+            <i class="fa fa-times" id="close-btn"></i>
+         </div>
+         <label for="" class="question">Question:</label>
+         <textarea  id="" cols="30" rows="10"></textarea>
+
+      </div>
+
+   </div>
+   
+
+   <script src="script.js"></script>
+</body>
+</html>
