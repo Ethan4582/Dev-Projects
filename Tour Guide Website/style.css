@@ -13,7 +13,7 @@
     left: 0;
     width: 100%;
     padding: 30px 5%;
-    background-color: seagreen;  
+    background-color: transparent;  
     display: flex;
     align-items: center;
     z-index: 100;
@@ -25,4 +25,131 @@
     text-decoration: none;
     font-weight: 700;
     
+}
+
+.social-media{
+    margin : 0 auto 0 50px;  
+}
+
+.social-media  a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: .5s;
+
+}
+
+.social-media a:hover{
+    background:#fff ;
+
+}
+
+.social-media a i {
+    font-size:  20px;
+    color: #fff;
+    transition: .5s;
+}
+
+.social-media a:hover i {
+    color: #444;
+}
+
+.navbar a {
+   font-size: 18px;
+   color: #fff; 
+   text-decoration: none;
+   font-weight: 500;
+   margin-left: 30px;
+   text-shadow: 0 0 10px rgb(0 , 0,0,.2);
+}
+
+.banner{
+    position: relative; 
+    width: 100%;
+    height: 100vh;
+
+}
+
+.slider .slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.slide img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit:cover  ;
+    pointer-events:none;
+}
+
+
+.slide .left-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.left-info .petrter-blur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(225,225,225,.1);
+    backdrop-filter:  blur(20px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.petrter-blur h1 {
+    font-size:  250px; 
+    color: #fff;
+}
+
+
+.left-info  .content{
+    position: absolute;
+    bottom: 8%;
+    left:10%;
+    color: #fff;
+
+}
+
+
+.content h3{
+    font-size: 20px;
+}
+
+.content p{
+    font: size 16px;
+    margin : 10px  0 15px;
+}
+
+.content .btn {
+    display: inline-block;  
+    padding:  13px 28px;
+    background-color: #fff;
+    border:  2px solid #fff;
+    border-radius:  6px;
+    box-shadow:  0 0 10px rgba(0 ,0,0,.1);
+    font-size:16px;
+    color: #444;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.content .btn:hover {
+    background:  transparent;
+    color: #fff;
 }
